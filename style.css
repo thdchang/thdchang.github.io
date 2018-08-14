@@ -31,7 +31,8 @@
 
 h1{
     font-family:"Georgia, serif"!important;
-    font-size:50px!important;
+    font-size:3.5vw!important;
+    font-weight:bold;
 }
 
 h3{
@@ -81,17 +82,15 @@ h3{
 
 #main-image{
     float:left;
-    width:350px;
-    height:300px;
     padding-bottom:50px;
     padding-right:50px;
-    overflow:auto!important;
-
+    max-width: 350px!important;
+    max-height:300px!important;
+    width:100%;
+    height:auto;
 }
 
-.figure table{
-    border: 5px solid black;
-}
+
 
 #figure-table{
     margin:50px;
@@ -102,3 +101,8 @@ h3{
 #visual-header{
     margin-bottom:70px;
 }
+
+p{
+    font-size:1.5vw!important;
+}
+
