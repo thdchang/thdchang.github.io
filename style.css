@@ -113,21 +113,23 @@ h3{
 
 }
 
+.navbar-default {
+    background-color: black;
+    /* opacity: 0.8; */
+}
+
 
 #visual-header{
     margin-bottom:70px;
 }
 
-p{
-    /* font-size:1.5vw!important; */
-}
 
-@media (max-width: 450px) {
+@media (max-width: 300px) {
     p{
-        font-size:0.5vw;
+        font-size:0.25vw;
     }
     h1{
-        font-size:1.5vw;
+        font-size:0.75vw;
     }
         
     }
@@ -141,13 +143,14 @@ p{
     }
 
 }
-@media (min-width: 600px) {
+
+@media (min-width: 300px) {
 
     h1{
-        font-size:4vw;
+        font-size:3vw!important;
     }
     p{
-        font-size:3vw!;
+        font-size:1vw!!important;
     }
 } 
 
