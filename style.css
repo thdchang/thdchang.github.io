@@ -127,10 +127,10 @@ p{
 @media (min-width: 600px) {
 
     h1{
-        font-size:3vw;
+        font-size:4vw;
     }
     p{
-        font-size:2vw!important;
+        font-size:3vw!important;
     }
 } 
 
