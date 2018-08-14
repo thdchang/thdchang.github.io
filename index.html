@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Latitude vs. X</title>
+    <!-- title shows on top of the browser and on tab-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+
+<body id="b_color">
+<!-- block-level code contains what is displayed in the browser-->
+    
+    <header>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" id="landing-link" href="index.html">Latitude</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav ml-auto">
+                <!-- ml-auto used to align links to the right side-->
+                    <li class="nav-item dropdown">
+                    <!-- dropdown menu for plots tab-->                    
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <!-- links within the dropdown tab-->
+                            <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+
+
+                    </li>
+                    <!-- <li class="nav-item active"> -->
+                        <!-- <a class="nav-link" href="#">Comparison <span class="sr-only">(current)</span></a> -->
+                        <!-- "sr-only" class sets it as the current page-->
+                    </li>
+
+                    <li class="nav-item">
+                        <!-- link to the comparison page-->
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- link to the data page-->
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <section>
+    
+    <div class="container-fluid">
+        <!--container for Main section and aside section-->
+        <div class="row" style="padding:20px">
+            <!-- one row when large and when resized the single row becomes two rows-->
+            
+            <div class="col-xl-8">
+                <section class="main">
+            <!-- div section containing the summary and figure-->
+                    <h1 id="main-header">Summary: Latitude vs. X</h1>
+                    <div class="figure">
+                        <img id="main-image" src="Latitude_Temperature.png" width="200px" height="200px">
+                        <p>By following the analytics paradigm, the “Latitude Weather Analysis” project was completed to visualize the weather of 771 cities around the world of varying distance from the equator.</p>
+                        <p>A data analysis was conducted to answer the following question:</p>
+                        <p style="text-indent:30px"><em>“What’s the weather like as we approach the equator?”</em></p></blockquote>
+                        <p>Latitude and longitude coordinate pairs were randomly generated to identify the location of a city closest to each coordinate pair by using the Citipy open source library. For each randomly selected city, weather data was then collected through the <a href="https://openweathermap.org/api">OpenWeatherMap API</a> for four metrics: maximum temperature, humidity, cloudiness, and wind speed.</p>
+                        <p>Thereafter, on a <a href="https://nbviewer.jupyter.org/github/thdchang/WeatherPy/blob/master/WeatherPy%20Analysis.ipynb">jupyter notebook</a> Python Pandas and Numpy library was used to assemble and clean data. Also, Matplotlib and Seaborn libraries were used to generate graphs from the created data frames for (1) <b>Latitude vs. Maximum Temperature</b>, (2) <b>Latitude vs. Humidity</b>, (3) <b>Latitude vs. Cloudiness</b>, (4) <b>Latitude, vs. Wind Speed</b>. Observable trends were identified for each plot. In depth explanation can be read by clicking one of the metrics in the Plot dropdown menu on the navigation bar or by clicking on one of the graphs under the Visualization section. </p>
+                        <p>Limitations to the data analysis included but not limited to an api call conducted only on 6/23/2018, Citipy open source library does not contain all cities/towns in the world, and no statistical testing conducted to conclude correlations between collected metrics.</p>
+                        <p>Based on the “Latitude Weather Analysis”, observable trends can be deduced from the each of the plots. The maximum temperature increases as the city’s location is closer to the equator. Regardless of the distance from the equator the concentration of the number of cities decreases as the measured humidity (%) decreases from 100% to 0%, the distribution of measured cloudiness (%) for cities is well-dispersed, and the concentration of the number of cities increases as the measured wind speed (mph) increases from 0 mph to 35 mph.</p>
+                    </div>
+                </secion>
+            </div>
+
+            <!-- <div class="col-lg-1"></div> -->
+
+
+            <div class="col-xl-4">
+                <!--div section containing the left visualizations-->
+                <div id="aside-col">
+                    <header>
+                        <h1 id="visual-header">Visualizations</h1>
+                    </header>
+                    <div class="aside-img">
+                    <a href="temperature.html"><img class="img-fluid" src="Latitude_Temperature.png"></a>
+                    <a href="humidity.html"><img class="img-fluid" src="Latitude_Humidity.png"></a>
+                    <a href="cloudiness.html"><img class="img-fluid" src="Latitude_Cloudiness.png"></a>
+                    <a href="windspeed.html"><img class="img-fluid" src="Latitude_WindSpeed.png"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+
+    <footer>
+
+
+    </footer>
+
+    </body>
+</html>

@@ -1,0 +1,104 @@
+#aside-col {
+    /* border:5px solid black; */
+    margin:20px;
+    margin-top:50px!important;
+    padding:50px;
+    background-color:whitesmoke;
+
+}
+
+
+
+.aside-img img{
+    width:200px;
+    height:200px;
+}
+
+.img-border{
+    border:2px black solid;
+}
+
+#b_color {
+    background-color:lightgray;
+}
+
+
+.comparison-body{
+    position:relative;
+    margin:100px!important;
+
+}
+
+h1{
+    font-family:"Georgia, serif"!important;
+    font-size:50px!important;
+}
+
+h3{
+    text-align:center;
+}
+
+.figure{
+    margin-top:30px;
+}
+
+
+.figure p{
+    font-size:20px;
+    font-family:"Georgia, serif";
+}
+
+#graphs img{
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+.info{
+    font-size:20px;
+    font-family:"Georgia, serif";}
+
+#landing-link{
+        background-color:lightseagreen;
+        color:white;
+        font-size:40px;
+        margin-bottom:-10px;
+        margin-top:-10px;
+        margin-left:80px;
+        padding:10px;
+}
+.main {
+    margin:20px;
+    margin-top:50px;
+    padding:50px;
+    padding-bottom:80px;
+    background-color:whitesmoke;
+
+}
+
+#main-header{
+    margin-bottom:50px;
+}
+
+#main-image{
+    float:left;
+    width:350px;
+    height:300px;
+    padding-bottom:50px;
+    padding-right:50px;
+    overflow:auto!important;
+
+}
+
+.figure table{
+    border: 5px solid black;
+}
+
+#figure-table{
+    margin:50px;
+    overflow:auto;
+
+}
+
+#visual-header{
+    margin-bottom:70px;
+}
