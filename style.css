@@ -31,7 +31,6 @@
 
 h1{
     font-family:"Georgia, serif"!important;
-    font-size:3vw!important;
     font-weight:bold;
 }
 
@@ -82,12 +81,11 @@ h3{
 
 #main-image{
     float:left;
-    /* padding-bottom:50; */
+    padding-bottom:50;
     padding-right:50px;
     max-width: 350px!important;
     max-height:300px!important;
-    width:100%;
-    height:auto;
+
 }
 
 
@@ -103,6 +101,46 @@ h3{
 }
 
 p{
-    font-size:1.5vw!important;
+    /* font-size:1.5vw!important; */
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    p{
+        font-size:0.60vw;
+    }
+    h1{
+        font-size:1vw;
+    }
+        
+    }
+    #main-image{
+        margin-top:-50px;
+        margin-bottom:30px;
+        width:100%;
+        height:auto;
+    }
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+
+    h1{
+        font-size:3vw;
+    }
+    p{
+        font-size:2vw!important;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    h1{
+        /* font-size:2vw; */
+    }
+    p{
+        /* font-size:1vw; */
+    }
+} 
+} 
 
