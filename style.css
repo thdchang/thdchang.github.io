@@ -21,17 +21,11 @@
 }
 
 .b_image {
-    /* background-color:lightgray; */
     background-image: url("world.jpg");
     background-attachment: fixed;
 }
 
-/* 
-.comparison-body{
-    position:relative;
-    margin:100px;
 
-} */
 
 
 
@@ -49,10 +43,6 @@ h3{
     text-align:center;
     padding:25px;
 }
-
-/* .figure{
-    margin-top:30px;
-} */
 
 
 #figure-table{
@@ -83,9 +73,7 @@ h3{
     color: white;
     font-size: 20px;
     margin-bottom: -10px;
-    /* margin-top: -8px; */
     margin-left: 57px;
-    /* padding: 10px; */
     padding-left: 50px;
     padding-right: 50px;
     border: 2px white outset;
@@ -96,9 +84,7 @@ h3{
     color: white;
     font-size: 20px;
     margin-bottom: -10px;
-    /* margin-top: -8px; */
     margin-left: 57px;
-    /* padding: 10px; */
     padding-left: 50px;
     padding-right: 50px;
     border: 2px white outset;
@@ -119,13 +105,12 @@ h3{
     float:left;
     padding-right:50px;
     width: 400px;
-
+    height:300px;
 
 }
 
 .navbar-default {
     background-color: black;
-    /* opacity: 0.8; */
 }
 
 
