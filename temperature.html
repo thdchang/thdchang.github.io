@@ -44,9 +44,7 @@
 
 
                     </li>
-                    <!-- <li class="nav-item active"> -->
-                        <!-- <a class="nav-link" href="#">Comparison <span class="sr-only">(current)</span></a> -->
-                        <!-- "sr-only" class sets it as the current page-->
+
                     </li>
 
                     <li class="nav-item">
@@ -81,8 +79,8 @@
                         </br>
                         </br>
                         </br>
-                        <p>Compared to the other metrics plotted against latitude, the maximum temperature of each 771 randomly selected cities has a negative parabolic distribution. Simply, as the latitude increases from the range -80 to +80 degrees, the max temperature increases, peaks, and then begins to decreases. This demonstrates that there is an increase in max temperature as the city is closer to the equator (0 degree latitude).</p>
-                        <p>However, the negative parabolic distribution is not clearly defined. The plot displays a cluster of cities within the latitude range from ~45% to ~75% perturbing out of the negative parabolic curve. Furthermore, it appears more cities with positive latitudes were collected, despite utilizing the random module to generate coordinate pairs well-distributed throughout the world. Referring back to the jupyter notebook on the landing page, a plot displaying the distribution of 2000 randomly generated coordinate pairs is available. From the 2000 randomly generated coordinate pairs, only 771 cities were identified near the coordinate pairs. Despite the clear observable trend, it can suggested there may be limitations and noisy data present in the Citipy’s city data. Choosing cities randomly in the Citipy library instead of randomly generating coordinate pairs first and performing additional multiple api calls on different dates would possibly provide additional in-depth insights.</p>
+                        <p>Compared to the other metrics plotted against latitude, the maximum temperature of each 681 randomly selected cities has a negative parabolic distribution. Simply, as the latitude increases from the range -80 to +80 degrees, the max temperature increases, peaks, and then begins to decreases. This demonstrates that there is an increase in max temperature as the city is closer to the equator (0 degree latitude).</p>
+                        <p>The plot also shows that the negative parabolic distribution is not clearly defined. There appears to be a cluster of cities within the latitude range from ~45% to ~75% perturbing out of the negative parabolic curve. Also, cities with positive latitudes are the majority of the weather data collected. Referring to the jupyter notebook on the landing page, the first plot displays a well-dispered distribution of 2000 randomly generated coordinate pairs is available. From the 2000 randomly generated coordinate pairs, only 771 cities were identified near the coordinate pairs. However, the coordinates filtered down to only 687 cities from the original 2000 coordinates. Despite the clear observable trend, it is suggested that there are limitations and noisy data due to limited number of world cities in the Citipy module. Choosing cities randomly from within the Citipy module instead of randomly generating coordinate pairs first, then performing additional multiple api calls on different dates would possibly have additional and/or better in-depth insights.</p>
                     </div>
                 </div>
             </div>
