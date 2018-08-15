@@ -1,7 +1,7 @@
 #aside-col {
-    /* border:5px solid black; */
+    border:5px solid black;
     margin:20px;
-    margin-top:50px!important;
+    margin-top:50px;
     padding:50px;
     background-color:whitesmoke;
 
@@ -10,9 +10,10 @@
 
 
 .aside-img img{
-    width:200px;
-    height:200px;
-    rounded mx-auto d-block
+    display: inline;
+    justify-content: center;
+    width:49%;
+    height:49%;
 }
 
 .img-border{
@@ -25,12 +26,12 @@
     background-attachment: fixed;
 }
 
-
+/* 
 .comparison-body{
     position:relative;
     margin:100px;
 
-}
+} */
 
 .col-border{
     border: 5px white outset;
@@ -51,9 +52,9 @@ h3{
     padding:25px;
 }
 
-.figure{
+/* .figure{
     margin-top:30px;
-}
+} */
 
 
 #figure-table{
@@ -62,6 +63,9 @@ h3{
 
 }
 
+.figure {
+    display: inline-block;
+}
 .figure p{
     font-size:20px;
     font-family:"Georgia, serif";
@@ -77,30 +81,41 @@ h3{
     font-family:"Georgia, serif";}
 
 #landing-link{
-        background-color:lightseagreen;
-        color:white;
-        font-size:40px;
-        margin-bottom:-10px;
-        margin-top:-10px;
-        margin-left:40px;
-        padding:10px;
-        padding-left:50px;
-        padding-right:50px;
-        border: 5px white outset;
+    background-color: lightseagreen;
+    color: white;
+    font-size: 20px;
+    margin-bottom: -10px;
+    /* margin-top: -8px; */
+    margin-left: 57px;
+    /* padding: 10px; */
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px white outset;
 }
 
-.main {
-    margin:20px;
-    margin-top:50px;
-    padding:50px;
-    padding-bottom:80px;
-    background-color:whitesmoke;
+.metrics-link{
+    background-color: lightseagreen;
+    color: white;
+    font-size: 20px;
+    margin-bottom: -10px;
+    /* margin-top: -8px; */
+    margin-left: 76px;
+    /* padding: 10px; */
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px white outset;
+}
 
+
+.main {
+    margin: 55px;
+    padding: 50px;
+    background-color: whitesmoke;
+    border: 5px solid black;
 }
 
 #main-header{
-    margin-bottom:50px;
-}
+    margin-bottom: 70px;}
 
 #main-image{
     float:left;
@@ -120,48 +135,7 @@ h3{
 
 
 #visual-header{
-    margin-bottom:70px;
+    padding-bottom: 30px;
 }
 
-
-@media (max-width: 300px) {
-    p{
-        font-size:0.25vw;
-    }
-    h1{
-        font-size:0.75vw;
-    }
-        
-    }
-    #main-image{
-        margin-top:-50px!important;
-        margin-bottom:30px!important;
-
-
-        width:100%!important;
-        height:100%!important;
-    }
-
-}
-
-@media (min-width: 300px) {
-
-    h1{
-        font-size:3vw!important;
-    }
-    p{
-        font-size:1vw!!important;
-    }
-} 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media (min-width: 768px) {
-    h1{
-        /* font-size:2vw; */
-    }
-    p{
-        /* font-size:1vw; */
-    }
-} 
-} 
 

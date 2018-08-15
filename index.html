@@ -7,6 +7,7 @@
     <title>Latitude vs. X</title>
     <!-- title shows on top of the browser and on tab-->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="mediaqueries.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -62,11 +63,11 @@
     
     <div class="container-fluid opacity">
         <!--container for Main section and aside section-->
-        <div class="row" style="padding:20px">
+        <div class="row">
             <!-- one row when large and when resized the single row becomes two rows-->
             
             <div class="col-xl-8">
-                <section class="main">
+                <div class="main">
             <!-- div section containing the summary and figure-->
                     <h1 id="main-header">Summary: Latitude vs. X</h1>
                     <div class="figure">
@@ -79,7 +80,7 @@
                         <p>Limitations to the data analysis included but not limited to an api call conducted only on 6/23/2018, Citipy open source library does not contain all cities/towns in the world, and no statistical testing conducted to conclude correlations between collected metrics.</p>
                         <p>Based on the “Latitude Weather Analysis”, observable trends can be deduced from the each of the plots. The maximum temperature increases as the city’s location is closer to the equator. Regardless of the distance from the equator the concentration of the number of cities decreases as the measured humidity (%) decreases from 100% to 0%, the distribution of measured cloudiness (%) for cities is well-dispersed, and the concentration of the number of cities increases as the measured wind speed (mph) increases from 0 mph to 35 mph.</p>
                     </div>
-                </section>
+                </div>
             </div>
 
             <!-- <div class="col-lg-1"></div> -->

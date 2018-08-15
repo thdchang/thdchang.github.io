@@ -7,7 +7,7 @@
     <!-- title shows on top of the browser and on tab-->
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
+    <link ref="stylesheet" type="text/css" href="mediaqueries.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -20,7 +20,7 @@
     <header>
         <!-- navigation bar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-black navbar-default">
-            <a class="navbar-brand" id="landing-link" href="index.html">Latitude</a>
+            <a class="navbar-brand metrics-link" href="index.html">Latitude</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -66,13 +66,13 @@
     
     <div class="container-fluid opacity">
         <!--container for Main section and aside section-->
-        <div class="row" style="padding:20px">
+        <div class="row">
             <!-- one row when large and when resized the single row becomes two rows-->
             
             <div class="col-xl-8">
-                <section class="main">
+                <div class="main">
             <!-- div section containing the summary and figure-->
-                    <h1 id="main-header">Max Temperature</h1>
+                    <h1 class="metric-header">Max Temperature</h1>
                     <div class="figure">
                         <img class="thumbnail img-fluid metric-figure" src="Latitude_Temperature.png">
                         </br>
@@ -81,7 +81,7 @@
                         <p>Compared to the other metrics plotted against latitude, the maximum temperature of each 771 randomly selected cities has a negative parabolic distribution. Simply, as the latitude increases from the range -80 to +80 degrees, the max temperature increases, peaks, and then begins to decreases. This demonstrates that there is an increase in max temperature as the city is closer to the equator (0 degree latitude).</p>
                         <p>However, the negative parabolic distribution is not clearly defined. The plot displays a cluster of cities within the latitude range from ~45% to ~75% perturbing out of the negative parabolic curve. Furthermore, it appears more cities with positive latitudes were collected, despite utilizing the random module to generate coordinate pairs well-distributed throughout the world. Referring back to the jupyter notebook on the landing page, a plot displaying the distribution of 2000 randomly generated coordinate pairs is available. From the 2000 randomly generated coordinate pairs, only 771 cities were identified near the coordinate pairs. Despite the clear observable trend, it can suggested there may be limitations and noisy data present in the Citipy’s city data. Choosing cities randomly in the Citipy library instead of randomly generating coordinate pairs first and performing additional multiple api calls on different dates would possibly provide additional in-depth insights.</p>
                     </div>
-                </secion>
+                </div>
             </div>
 
             <!-- <div class="col-lg-1"></div> -->
