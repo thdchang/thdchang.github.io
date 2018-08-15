@@ -33,9 +33,7 @@
 
 } */
 
-.col-border{
-    border: 5px white outset;
-}
+
 
 .opacity {
     opacity: 0.95;
@@ -99,7 +97,7 @@ h3{
     font-size: 20px;
     margin-bottom: -10px;
     /* margin-top: -8px; */
-    margin-left: 76px;
+    margin-left: 57px;
     /* padding: 10px; */
     padding-left: 50px;
     padding-right: 50px;
@@ -119,12 +117,9 @@ h3{
 
 #main-image{
     float:left;
-    padding-bottom:50;
     padding-right:50px;
-    max-width: 450px;
-    max-height:400px;
-    -webkit-use-select:none;
-    cursor:zoom-in;
+    width: 400px;
+
 
 }
 
